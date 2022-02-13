@@ -52,3 +52,13 @@ header {
   padding: 10px;
   font-size: 1.2rem;
 }
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.geral {
+  width: 30%;
+  text-align: center;
+}
