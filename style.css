@@ -42,12 +42,12 @@ header {
   align-items: center;
 }
 
-.header-logo p {
+.header-logo h2 {
   margin-left: 12px;
   font-size: 2.5rem;
 }
 
-.header-player {
+.header-player p {
   text-align: center;
   padding: 10px;
   font-size: 1.2rem;
@@ -61,4 +61,41 @@ main {
 .geral {
   width: 30%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.geral h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Estilização da seção que receberá os icones de generos musicais assim como suas divs */
+
+.genre-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre-cards div {
+  background-color: var(--cinza3);
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.genre-cards div:hover {
+  background-color: var(--cinza2);
+}
+
+.genre-cards img {
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.genre-cards p {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
