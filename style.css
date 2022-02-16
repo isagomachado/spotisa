@@ -1,0 +1,131 @@
+:root {
+  --verde-escuro: rgb(3, 107, 82);
+  --verde-claro: rgb(47, 193, 140);
+  --roxo-escuro: rgb(65, 25, 127);
+  --roxo-claro: rgb(137, 88, 163);
+  --azul-claro: rgb(0, 213, 226);
+  --azul-escuro: rgb(0, 109, 251);
+  --cinza-claro: rgb(225, 229, 235);
+  --cinza1: rgb(62, 66, 75);
+  --cinza2: rgb(40, 42, 47);
+  --cinza3: rgb(30, 31, 36);
+  --cinza4: rgb(26, 27, 28);
+}
+
+/* reset e configurações gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: var(--cinza4);
+}
+
+/* estilização do header */
+
+.img-logo {
+  width: 60px;
+}
+
+header {
+  /* width: 100%; */
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo h2 {
+  margin-left: 12px;
+  font-size: 2.5rem;
+}
+
+.header-player p {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+/* estilização do titulo das seções da main */
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.geral {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.geral h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* as tres seções tinham uma estilização padrão, todas flex, wrap e centralizadas. coloquei uma classe coringa nas tres seções para não repetir codigo */
+
+.geral-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilização na seção que receberá os icones de generos musicais assim como suas divs, envolvendo imagem e paragrafo */
+
+.genre-cards div {
+  background-color: var(--cinza3);
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.genre-cards div:hover {
+  background-color: var(--cinza2);
+}
+
+.genre-cards img {
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.genre-cards p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+/* Criei uma classe especial para os elementos de texto, que envolverá as playlists e nomes de musicas pois a estilização será a mesma */
+
+.text-card {
+  background-color: var(--cinza2);
+  margin: 20px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.text-card:hover {
+  background-color: var(--cinza1);
+}
+
+/* estilização para o item que estiver selecionado */
+
+.selected-item {
+  background-color: var(--cinza-claro) !important;
+  color: var(--cinza3);
+}
